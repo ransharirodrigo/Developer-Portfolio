@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <div class="container-fluid vh-100">
-        <div class="row row px-2 h-100">
+    <div class="container-fluid ">
+        <div class="row  px-2 ">
 
             <!-- Offcanvas icon -->
             <div class="col-12  navBarDiv d-md-none ">
-                <div class="row h-100 d-flex align-items-center">
+                <div class="row  d-flex align-items-center py-4">
                     <i class="bi bi-list text-white fs-5"></i>
                 </div>
             </div>
@@ -33,6 +33,50 @@
                 ?>
             </div>
 
+
+            <!-- Content div -->
+            <div class="col-12 mt-3">
+
+                <!-- Heading -->
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-white">Portfolio</h1>
+                    </div>
+                </div>
+
+                <!-- Personal Projects div -->
+                <div class="row mt-3">
+                    <div class="col-12">
+
+                        <!-- Personal project heading -->
+                        <div class="row">
+                            <div class="col-12">
+                                <h3><span class="text-white">Personal&nbsp;</span><span class="portfolioPageSubheadingSecondText">Projects</span></h3>
+                            </div>
+                        </div>
+
+
+                        <div class="row d-flex justify-content-around">
+
+                            <!-- Div 1 -->
+                            <?php
+                            $image_path = "../../assets/images/portfolioImages/EmartDesign.svg";
+
+
+                            include("../../components/portfolioItem.php") ?>
+
+                            <!-- Div 2 -->
+                            <?php include("../../components/portfolioItem.php") ?>
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </div>

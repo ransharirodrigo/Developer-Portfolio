@@ -39,7 +39,8 @@ body {
 }
 
 .aboutPageNameTxt,
-.contactPageHeadingTxt {
+.contactPageHeadingTxt,
+.portfolioPageSubheadingSecondText {
     color: var(--yellowish-brown) !important;
 }
 
@@ -100,6 +101,15 @@ body {
     border-radius: 40px 0 40px 0; /* left top 40px, left bottom 0, right top 0, right bottom 40px */
 }
 
+.portfolioItemDiv {
+    background: linear-gradient(to right, #006270, #009394);
+    border-radius: 25px;
+}
+
+.portfolioItemImage{
+    width: 50%;
+}
+
 @media(min-width:992px) {
     .nameAndStackDiv {
         height: 75% !important;
@@ -118,5 +128,9 @@ body {
     .indexPageImage {
         width: 260px;
         height: 260px;
+    }
+
+    .portfolioItemImage{
+        width: 100%;
     }
 }
