@@ -57,7 +57,8 @@
                 </div>
             </div>
 
-            <div class="container mt-5">
+            <!-- Tech images circles -->
+            <div class="mt-5 mb-3">
                 <div class="col-12">
                     <div class="row firstTechRow d-none d-md-flex">
                         <div class="col-lg-2 col-md-4">
@@ -120,6 +121,61 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- Tech stack divs -->
+            <div class="">
+                <div class="row ">
+                    <div class="col-md-6 mb-0 mb-md-4 ">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 text-center mt-5">
+                                <h4>
+                                    <span class="text-white">Front-</span><span class="techNameSecondPartOfTxt">End</span>
+                                </h4>
+                                <div>
+                                    <p class="text-white">HTML</p>
+                                    <p  class="text-white">CSS</p>
+                                    <p  class="text-white">Java Script</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 text-center mt-5">
+                                <h4>
+                                    <span class="text-white">Back-</span><span class="techNameSecondPartOfTxt">End</span>
+                                </h4>
+                                <div>
+                                    <p class="text-white">JAVA</p>
+                                    <p  class="text-white">PHP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="row s">
+                            <div class="col-12 col-sm-6 text-center mt-5">
+                                <h4>
+                                    <span class="text-white">Data</span><span class="techNameSecondPartOfTxt">bases</span>
+                                </h4>
+                                <div>
+                                    <p class="text-white">MySQL</p>
+                                    <p  class="text-white">Mongo DB</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 text-center mt-5">
+                                <h4>
+                                    <span class="text-white">Other</span><span class="techNameSecondPartOfTxt">s</span>
+                                </h4>
+                                <div>
+                                    <p class="text-white">WordPress</p>
+                                    <p  class="text-white">React Native</p>
+                                    <p  class="text-white">NextJS</p>
+                                    <p  class="text-white">Git Hub</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </div>
