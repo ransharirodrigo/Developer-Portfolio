@@ -1,3 +1,9 @@
+:root {
+    --yellowish-brown: #E7D095;
+    --grey-color: #CAC9C7;
+}
+
+
 body {
     background-color: #034952;
 }
@@ -28,6 +34,34 @@ body {
     height: 160px;
 }
 
+.aboutPageNameTxt {
+    color: var(--yellowish-brown) !important;
+}
+
+.techCircle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.techImg {
+    width: 60%;
+    height: 60%;
+    /* object-fit: cover; */
+}
+
+.firstTechRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 @media(min-width:992px) {
     .nameAndStackDiv {
         height: 75% !important;
@@ -43,9 +77,8 @@ body {
         background-color: #006270;
     }
 
-   
-.indexPageImage {
-    width: 260px;
-    height: 260px;
-} 
+    .indexPageImage {
+        width: 260px;
+        height: 260px;
+    }
 }

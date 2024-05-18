@@ -18,7 +18,7 @@
         <div class="row px-2 h-100">
 
             <!-- Offcanvas icon -->
-            <div class="col-12  navBarDiv d-md-none ">
+            <div class="col-12  navBarDiv d-md-none bg-danger">
                 <div class="row h-100 d-flex align-items-center">
                     <i class="bi bi-list text-white fs-5"></i>
                 </div>
