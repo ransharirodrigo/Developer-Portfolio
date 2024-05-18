@@ -81,6 +81,12 @@ body {
 .techNameSecondPartOfTxt{
     color: var(--yellowish-brown2);
 }
+
+.logo{
+    width: 20px;
+    height: 20px;
+}
+
 @media(min-width:992px) {
     .nameAndStackDiv {
         height: 75% !important;
