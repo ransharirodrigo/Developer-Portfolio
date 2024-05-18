@@ -24,6 +24,9 @@
                 </div>
             </div>
 
+
+            <?php include("config.php") ?>
+
             <!-- Nav Bar -->
             <div class="col-12 navBarDiv d-none d-md-block">
                 <?php
