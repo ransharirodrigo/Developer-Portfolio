@@ -35,15 +35,19 @@
 
 
             <div class="col-12 contactPageContentDiv">
-                <div class="row h-100 d-flex justify-content-center justify-content-md-around ">
+                <div class="row h-100 d-flex  justify-content-center justify-content-md-around ">
 
                     <!-- Get In Touch Div -->
-                    <div class="col-10 col-md-6">
-                        <div class="row">
-                            <div>
+                    <div class="col-10 col-lg-5">
+                        <div class="row h-75">
+
+                            <!-- Heading -->
+                            <div class="text-center text-lg-start ">
                                 <h1><span class="text-white">Get In&nbsp;</span><span class="contactPageHeadingTxt"> Touch.</span></h1>
                             </div>
-                            <div class="col-12 py-4 px-3 contactFormDiv mt-2">
+
+                            <!-- Content -->
+                            <div class="col-12 py-4 px-3 contactFormDiv mt-3 ">
 
                                 <!-- Name -->
                                 <div class="row">
@@ -58,7 +62,7 @@
                                 <!-- Email -->
                                 <div class="row mt-4">
                                     <div class="col-12 col-sm-4">
-                                        <p  class="text-white">Your Email ?</p>
+                                        <p class="text-white">Your Email ?</p>
                                     </div>
                                     <div class="col-12 col-sm-8">
                                         <input type="text" class="form-control" />
@@ -68,7 +72,7 @@
                                 <!-- Message -->
                                 <div class="row mt-4">
                                     <div class="col-12 col-sm-4">
-                                        <p  class="text-white">Your Message ?</p>
+                                        <p class="text-white">Your Message ?</p>
                                     </div>
                                     <div class="col-12 col-sm-8">
                                         <textarea rows="6" class="form-control"></textarea>
@@ -81,8 +85,80 @@
 
 
                     <!-- Connect with Me Online Div -->
-                    <div class="col-10 col-md-5">
+                    <div class="col-10 col-lg-5 mt-3 mt-lg-0 ">
+                        <div class="row  h-75">
 
+                            <!-- Heading -->
+                            <div class="text-center text-lg-start">
+                                <h1><span class="text-white">Connect with Me&nbsp;</span><span class="contactPageHeadingTxt"> Online.</span></h1>
+                            </div>
+
+
+                            <!-- Content -->
+                            <div class="col-12 ">
+
+                                <!-- Github -->
+                                <div class="row d-flex justify-content-around justify-content-lg-start">
+                                    <div class="col-3 d-none d-md-block">
+                                        <p class="text-white fs-5">Git Hub</p>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="https://github.com/ransharirodrigo" class="text-decoration-none text-reset">
+                                            <i class="bi bi-github contactPageIcon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- LinkedIn -->
+                                <div class="row d-flex justify-content-around justify-content-lg-start">
+                                    <div class="col-3 d-none d-md-block">
+                                        <p class="text-white fs-5">Linked In</p>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="https://www.linkedin.com/in/tharushi-rodrigo-b79a6a271/" class="text-decoration-none text-reset">
+                                            <i class="bi bi-linkedin contactPageIcon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Facebook -->
+                                <div class="row d-flex justify-content-around justify-content-lg-start">
+                                    <div class="col-3 d-none d-md-block">
+                                        <p class="text-white fs-5">Facebook</p>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="https://web.facebook.com/profile.php?id=100078846752762" class="text-decoration-none text-reset">
+                                            <i class="bi bi-facebook contactPageIcon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Whatsapp -->
+                                <div class="row d-flex justify-content-around justify-content-lg-start">
+                                    <div class="col-3 d-none d-md-block">
+                                        <p class="text-white fs-5">Whatsapp</p>
+                                    </div>
+                                    <div class="col-1">
+                                        <a class="text-decoration-none text-reset">
+                                            <i class="bi bi-whatsapp contactPageIcon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Instagram -->
+                                <div class="row d-flex justify-content-around justify-content-lg-start">
+                                    <div class="col-3 d-none d-md-block">
+                                        <p class="text-white fs-5">Instagram</p>
+                                    </div>
+                                    <div class="col-1">
+                                        <a class="text-decoration-none text-reset">
+                                            <i class="bi bi-instagram contactPageIcon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
