@@ -1,7 +1,8 @@
 :root {
     --yellowish-brown: #E7D095;
-    --yellowish-brown2:#E7D095;
+    --yellowish-brown2: #E7D095;
     --grey-color: #CAC9C7;
+    --green-color1: #009394;
 }
 
 
@@ -10,7 +11,8 @@ body {
 }
 
 
-.indexPageContentDiv {
+.indexPageContentDiv,
+.contactPageContentDiv {
     height: 85%;
 }
 
@@ -35,7 +37,8 @@ body {
     height: 160px;
 }
 
-.aboutPageNameTxt {
+.aboutPageNameTxt,
+.contactPageHeadingTxt {
     color: var(--yellowish-brown) !important;
 }
 
@@ -69,22 +72,31 @@ body {
     text-align: center;
     color: white;
 }
+
 .divider {
     border-left: 1px solid white;
     height: 100%;
 }
+
 .tech-heading {
     font-size: 18px;
     font-weight: bold;
 }
 
-.techNameSecondPartOfTxt{
+.techNameSecondPartOfTxt {
     color: var(--yellowish-brown2);
 }
 
-.logo{
+.logo {
     width: 20px;
     height: 20px;
+}
+
+.contactFormDiv {
+    border-color: var(--green-color1);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 40px 0 40px 0; /* left top 40px, left bottom 0, right top 0, right bottom 40px */
 }
 
 @media(min-width:992px) {
