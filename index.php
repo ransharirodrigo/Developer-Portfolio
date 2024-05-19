@@ -19,7 +19,7 @@
 
             <!-- Offcanvas icon -->
             <div class="col-12 navBarDiv d-md-none ">
-                <div class="row h-100 d-flex align-items-center">
+                <div class="row h-100 d-flex align-items-center" onclick="openOffcanvas()">
                     <i class="bi bi-list text-white fs-5"></i>
                 </div>
             </div>
@@ -113,7 +113,28 @@
 
 
         </div>
+
+        <div>
+            <?php include("components/offcanvas.php") ?>
+        </div>
+
     </div>
+
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const offcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvas"))
+
+
+        function openOffcanvas() {
+            offcanvas.show();
+        }
+
+        function closeOffCanvas() {
+            offcanvas.hide();
+        }
+    </script>
 </body>
 
 </html>

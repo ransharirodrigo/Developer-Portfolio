@@ -16,15 +16,14 @@
     <div class="container-fluid ">
         <div class="row  px-2 ">
 
+            <?php include("../../config.php") ?>
+
             <!-- Offcanvas icon -->
             <div class="col-12  navBarDiv d-md-none ">
-                <div class="row  d-flex align-items-center py-4">
+                <div class="row  d-flex align-items-center py-4" onclick="openOffcanvas()">
                     <i class="bi bi-list text-white fs-5"></i>
                 </div>
             </div>
-
-
-            <?php include("../../config.php") ?>
 
             <!-- Nav Bar -->
             <div class="col-12 navBarDiv d-none d-md-block">
@@ -181,7 +180,31 @@
             </div>
 
         </div>
+
+
+        <div>
+            <?php include("../../components/offcanvas.php") ?>
+        </div>
+
+
+
     </div>
+
+    <script src="../../assets/js/bootstrap.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const offcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvas"))
+
+
+        function openOffcanvas() {
+            offcanvas.show();
+        }
+
+        function closeOffCanvas() {
+            offcanvas.hide();
+        }
+    </script>
 </body>
 
 </html>

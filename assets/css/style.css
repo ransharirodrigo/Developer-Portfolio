@@ -4,11 +4,12 @@
     --grey-color: #CAC9C7;
     --green-color1: #009394;
     --green-color2: #00E0C7;
+    --background-color: #034952;
 }
 
 
 body {
-    background-color: #034952;
+    background-color: var(--background-color);
 }
 
 
@@ -130,6 +131,10 @@ body {
 
 .tech4 {
     color: var(--grey-color);
+}
+
+.offcanvas {
+    background-color: var(--background-color);
 }
 
 
