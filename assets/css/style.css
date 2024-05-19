@@ -137,6 +137,11 @@ body {
     background-color: var(--background-color);
 }
 
+.contactPageSubmitBtn {
+    background-color: #E7D095;
+    color: white;
+    border-radius: 50px;
+}
 
 @media(min-width:768px) {
     /* .portfolioItemDiv {
