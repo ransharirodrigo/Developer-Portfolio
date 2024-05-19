@@ -3,6 +3,7 @@
     --yellowish-brown2: #E7D095;
     --grey-color: #CAC9C7;
     --green-color1: #009394;
+    --green-color2: #00E0C7;
 }
 
 
@@ -98,16 +99,44 @@ body {
     border-color: var(--green-color1);
     border-width: 1px;
     border-style: solid;
-    border-radius: 40px 0 40px 0; /* left top 40px, left bottom 0, right top 0, right bottom 40px */
+    border-radius: 40px 0 40px 0;
+    /* left top 40px, left bottom 0, right top 0, right bottom 40px */
 }
 
 .portfolioItemDiv {
     background: linear-gradient(to right, #006270, #009394);
     border-radius: 25px;
+    height: 260px;
 }
 
-.portfolioItemImage{
-    width: 50%;
+.portfolioItemImage {
+    height: 100px;
+    width: fit-content;
+}
+
+.tech1 {
+    color: var(--green-color1);
+}
+
+.tech2 {
+    color: var(--yellowish-brown2);
+}
+
+
+.tech3 {
+    color: var(--green-color2);
+}
+
+
+.tech4 {
+    color: var(--grey-color);
+}
+
+
+@media(min-width:768px) {
+    /* .portfolioItemDiv {
+        height: 310px; 
+    } */
 }
 
 @media(min-width:992px) {
@@ -130,7 +159,11 @@ body {
         height: 260px;
     }
 
-    .portfolioItemImage{
-        width: 100%;
+    .portfolioItemImage {
+        height: 100%;
+    }
+
+    .portfolioItemDiv {
+        height: 310px;
     }
 }
