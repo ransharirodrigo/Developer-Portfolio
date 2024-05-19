@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="../../assets/images/logo.svg" />
 </head>
 
 <body>
@@ -65,7 +67,7 @@
                                         <p class="text-white">Your Email ?</p>
                                     </div>
                                     <div class="col-12 col-sm-8">
-                                        <input type="text" class="form-control" />
+                                        <input type="email" class="form-control" />
                                     </div>
                                 </div>
 
@@ -139,7 +141,7 @@
                                         <p class="text-white fs-5">Whatsapp</p>
                                     </div>
                                     <div class="col-1">
-                                        <a class="text-decoration-none text-reset">
+                                        <a class="text-decoration-none text-reset" onclick="openWhatsApp()">
                                             <i class="bi bi-whatsapp contactPageIcon"></i>
                                         </a>
                                     </div>
@@ -151,7 +153,7 @@
                                         <p class="text-white fs-5">Instagram</p>
                                     </div>
                                     <div class="col-1">
-                                        <a class="text-decoration-none text-reset">
+                                        <a href="https://www.instagram.com/tharu.shi_/" class="text-decoration-none text-reset">
                                             <i class="bi bi-instagram contactPageIcon"></i>
                                         </a>
                                     </div>
@@ -176,6 +178,7 @@
     <script src="../../assets/js/bootstrap.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
     <script>
         const offcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvas"))
 

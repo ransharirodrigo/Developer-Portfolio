@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="assets/images/logo.svg" />
+
 </head>
 
 <body>
@@ -45,7 +48,7 @@
                             <div class="col-12 d-lg-none h-50 ">
                                 <div class="row d-flex justify-content-center h-100 d-flex align-items-center">
                                     <div class="col-4 rounded-circle circleDiv d-flex justify-content-center align-items-center">
-                                    <img src="assets/images/indexPageImage.svg" alt="indexPageImage.svg" class="indexPageImage rounded-circle">
+                                        <img src="assets/images/indexPageImage.svg" alt="indexPageImage.svg" class="indexPageImage rounded-circle">
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +70,7 @@
                             <div class="d-none d-lg-flex align-items-center justify-content-center col-lg-6 ">
                                 <div class="row d-flex justify-content-center">
                                     <div class="col-4 rounded-circle circleDiv d-flex justify-content-center align-items-center">
-                                    <img src="assets/images/indexPageImage.svg" alt="indexPageImage.svg" class="indexPageImage rounded-circle">
+                                        <img src="assets/images/indexPageImage.svg" alt="indexPageImage.svg" class="indexPageImage rounded-circle">
                                     </div>
                                 </div>
                             </div>
