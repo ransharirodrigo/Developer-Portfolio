@@ -28,13 +28,30 @@
             </div>
 
 
-            <?php include("config.php") ?>
-
             <!-- Nav Bar -->
             <div class="col-12 navBarDiv d-none d-md-block">
-                <?php
-                include("includes/NavBar.php");
-                ?>
+                <div class="row">
+                    <div class="col-1 d-flex justify-content-center align-items-center">
+                        <a href="/Developer-Portfolio/index.html"><img src="/Developer-Portfolio/assets/images/logo.svg"
+                                alt="logo.svg" class="logo" /></a>
+                    </div>
+                    <div class="col-11">
+                        <div class="row d-flex flex-row justify-content-end py-4 h-100">
+                            <div class="col-2 col-lg-1 text-end">
+                                <a href="/Developer-Portfolio/app/views/portfolio.html"
+                                    class="text-white text-decoration-none">Portfolio</a>
+                            </div>
+                            <div class="col-2 col-lg-1 text-end">
+                                <a href="/Developer-Portfolio/app/views/about.html"
+                                    class="text-white text-decoration-none ">About</a>
+                            </div>
+                            <div class="col-2 col-lg-1 text-end">
+                                <a href="/Developer-Portfolio/app/views/contact.html"
+                                    class="text-white text-decoration-none  ">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="col-12 indexPageContentDiv">
@@ -47,8 +64,10 @@
                             <!-- Circle div for small screens-->
                             <div class="col-12 d-lg-none h-50 ">
                                 <div class="row d-flex justify-content-center h-100 d-flex align-items-center">
-                                    <div class="col-4 rounded-circle circleDiv d-flex justify-content-center align-items-center">
-                                        <img src="assets/images/indexPageImage.svg" alt="indexPageImage.svg" class="indexPageImage rounded-circle">
+                                    <div
+                                        class="col-4 rounded-circle circleDiv d-flex justify-content-center align-items-center">
+                                        <img src="assets/images/indexPageImage.svg" alt="indexPageImage.svg"
+                                            class="indexPageImage rounded-circle">
                                     </div>
                                 </div>
                             </div>
@@ -69,8 +88,10 @@
                             <!-- Circle div for large screens -->
                             <div class="d-none d-lg-flex align-items-center justify-content-center col-lg-6 ">
                                 <div class="row d-flex justify-content-center">
-                                    <div class="col-4 rounded-circle circleDiv d-flex justify-content-center align-items-center">
-                                        <img src="assets/images/indexPageImage.svg" alt="indexPageImage.svg" class="indexPageImage rounded-circle">
+                                    <div
+                                        class="col-4 rounded-circle circleDiv d-flex justify-content-center align-items-center">
+                                        <img src="assets/images/indexPageImage.svg" alt="indexPageImage.svg"
+                                            class="indexPageImage rounded-circle">
                                     </div>
                                 </div>
                             </div>
@@ -81,21 +102,24 @@
                                     <div class="col-1 ">
                                         <div class="row ">
                                             <div class="col-12 d-flex justify-content-end">
-                                                <a href="https://github.com/ransharirodrigo" class="text-decoration-none text-reset">
+                                                <a href="https://github.com/ransharirodrigo"
+                                                    class="text-decoration-none text-reset">
                                                     <i class="bi bi-github indexPageicon"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="row mt-1">
                                             <div class="col-12 d-flex justify-content-end">
-                                                <a href="https://web.facebook.com/profile.php?id=100078846752762" class="text-decoration-none text-reset">
+                                                <a href="https://web.facebook.com/profile.php?id=100078846752762"
+                                                    class="text-decoration-none text-reset">
                                                     <i class="bi bi-facebook indexPageicon"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="row mt-1">
                                             <div class="col-12 d-flex justify-content-end">
-                                                <a href="https://www.linkedin.com/in/tharushi-rodrigo-b79a6a271/" class="text-decoration-none text-reset">
+                                                <a href="https://www.linkedin.com/in/tharushi-rodrigo-b79a6a271/"
+                                                    class="text-decoration-none text-reset">
                                                     <i class="bi bi-linkedin indexPageicon"></i>
                                                 </a>
                                             </div>
@@ -118,7 +142,43 @@
         </div>
 
         <div>
-            <?php include("components/offcanvas.php") ?>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel"
+                class="offcanvas">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeOffCanvas()"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row mt-3">
+                        <div class="col-12 text-center">
+                            <a href="/Developer-Portfolio/index.php" class="text-decoration-none ">
+                                <h6 class="text-white">Home</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 text-center">
+                            <a href="/Developer-Portfolio/app/views/portfolio.php" class="text-decoration-none ">
+                                <h6 class="text-white">Portfolio</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 text-center">
+                            <a href="/Developer-Portfolio/app/views/about.php" class="text-decoration-none ">
+                                <h6 class="text-white">About</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 text-center">
+                            <a href="/Developer-Portfolio/app/views/contact.php" class="text-decoration-none ">
+                                <h6 class="text-white">Contact</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
