@@ -4,441 +4,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
-    <link rel="stylesheet" href="../../assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="../../assets/css/style.css" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <link rel="icon" href="../../assets/images/logo.svg" />
+    <title>Portfolio - Ranshari Rodrigo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
-    <div class="container-fluid ">
-        <div class="row  px-2 ">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">RR</a>
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Content Section -->
+    <section class="content-section">
+        <!-- <div class="section-header">
 
+            <h2 class="section-title">
+                <i class="fas fa-briefcase"></i>
+                My Portfolio
+            </h2>
+        </div> -->
 
-            <!-- Offcanvas icon -->
-            <div class="col-12  navBarDiv d-md-none ">
-                <div class="row  d-flex align-items-center py-4" onclick="openOffcanvas()">
-                    <i class="bi bi-list text-white fs-5"></i>
-                </div>
-            </div>
-
-            <!-- Nav Bar -->
-            <div class="col-12 navBarDiv d-none d-md-block">
-                <div class="row">
-                    <div class="col-1 d-flex justify-content-center align-items-center">
-                        <a href="/Developer-Portfolio/index.html"><img src="/Developer-Portfolio/assets/images/logo.svg"
-                                alt="logo.svg" class="logo" /></a>
-                    </div>
-                    <div class="col-11">
-                        <div class="row d-flex flex-row justify-content-end py-4 h-100">
-                            <div class="col-2 col-lg-1 text-end">
-                                <a href="/Developer-Portfolio/app/views/portfolio.html"
-                                    class="text-white text-decoration-none">Portfolio</a>
-                            </div>
-                            <div class="col-2 col-lg-1 text-end">
-                                <a href="/Developer-Portfolio/app/views/about.html"
-                                    class="text-white text-decoration-none ">About</a>
-                            </div>
-                            <div class="col-2 col-lg-1 text-end">
-                                <a href="/Developer-Portfolio/app/views/contact.html"
-                                    class="text-white text-decoration-none  ">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Content div -->
-            <div class="col-12 my-3">
-
-                <!-- Team Projects div -->
-                <div class="row mt-4">
-                    <div class="col-12">
-
-                        <!-- Team project heading -->
-                        <div class="row">
-                            <div class="col-12">
-                                <h2><span class="text-white">Team&nbsp;</span><span
-                                        class="portfolioPageSubheadingSecondText">Projects</span></h2>
-                            </div>
-                        </div>
-
-                        <div class="row">
-
-                            <!-- Div 1 -->
-                            <div class="col-12 mt-4">
-                                <div class="row">
-
-
-                                    <div class="col-11 offset-1 offset-md-0 col-md-5">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5 class="text-white">
-                                                    Web based Point Of Sales System
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-11 d-flex flex-row">
-                                                <span class="tech1">
-                                                    #HTML &nbsp; &nbsp;
-                                                </span>
-                                                <span class="tech2">
-                                                    #CSS &nbsp; &nbsp;
-                                                </span>
-                                                <span class="tech3">
-                                                    #JS &nbsp; &nbsp;
-                                                </span>
-                                                <span class="tech4">
-                                                    #PHP &nbsp; &nbsp;
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-11  offset-1  col-md-6  order-2 order-md-2 mt-3 mt-md-0">
-                                        <p class="text-white">
-                                            I contributed to a web-based project focused on developing
-                                            a comprehensive Point of Sale (POS) system tailored for hardware retail
-                                            businesses.
-                                            Our solution empowered users with robust features including product,
-                                            category,
-                                            and brand management capabilities. Additionally, it offered advanced
-                                            functionalities such as generating profit reports,
-                                            tracking invoices and Goods Received Notes (GRNs), and managing both regular
-                                            and credit customers. Moreover,
-                                            our POS system provided the flexibility to hold and unhold invoices,
-                                            ensuring seamless transactions and efficient operations.
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-                            <!-- Div 2 -->
-                            <div class="col-12 mt-4">
-                                <div class="row">
-
-                                    <div class="col-11 offset-1 offset-md-0 col-md-6 order-2 order-md-1 mt-3 mt-md-0">
-                                        <p class="text-white">
-                                            I contributed to the development of a web-based restaurant management
-                                            system designed to streamline operations and enhance customer experiences.
-                                            Our system featured user privileges,
-                                            including Super Admin, Admin, and Customer roles, ensuring secure access and
-                                            tailored functionalities for different users.
-                                            The Super Admin had overarching control, while Admins managed restaurant
-                                            operations,
-                                            and Customers interacted with the system to place orders, make reservations,
-                                            and provide feedback.
-                                        </p>
-                                    </div>
-
-                                    <div class="col-11  offset-1  col-md-6 offset-md-0  order-1 order-md-2">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5 class="text-white">
-                                                    Restaurant Management System
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 d-flex flex-row">
-                                                <span class="tech1">
-                                                    #HTML &nbsp; &nbsp;
-                                                </span>
-                                                <span class="tech2">
-                                                    #CSS &nbsp; &nbsp;
-                                                </span>
-                                                <span class="tech3">
-                                                    #JS &nbsp; &nbsp;
-                                                </span>
-                                                <span class="tech4">
-                                                    #Laravel &nbsp; &nbsp;
-                                                </span>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!-- Personal Projects div -->
-                <div class="row mt-4">
-                    <div class="col-12">
-
-                        <!-- Personal project heading -->
-                        <div class="row">
-                            <div class="col-12">
-                                <h2><span class="text-white">Personal&nbsp;</span><span
-                                        class="portfolioPageSubheadingSecondText">Projects</span></h2>
-                            </div>
-                        </div>
-
-
-                        <div class="row d-flex justify-content-evenly mt-lg-4">
-
-
-                            <!-- Div 1 -->
-                            <div class="col-11 col-sm-8 col-md-5 portfolioItemDiv py-4 px-4 mt-2">
-                                <div class="row h-100 ">
-                                    <!-- Image -->
-                                    <div class="col-12  d-flex align-items-center justify-content-center">
-                                        <img src="/Developer-Portfolio/assets/images/portfolioImages/EmartDesign.svg"
-                                            alt="Portfolio Image" class="portfolioItemImage" />
-                                    </div>
-                                    <!-- Details -->
-                                    <div class="col-12  mt-2 mt-lg-0 ">
-                                        <!-- Front End -->
-                                        <div class="row ">
-                                            <div class="col-6  py-0">
-                                                <p class="text-white my-0">Front-End:</p>
-                                            </div>
-                                            <div class="col-6 ">
-
-                                                <span class="text-white">HTML</span><br>
-                                                <span class="text-white">CSS</span><br>
-                                                <span class="text-white">Java Script</span>
-
-                                            </div>
-                                        </div>
-                                        <!-- Back End -->
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="text-white my-0">Back-End:</p>
-                                            </div>
-                                            <div class="col-6">
-                                                <span class="text-white"> PHP </span>
-                                            </div>
-                                        </div>
-                                        <!-- Database -->
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="text-white my-0">Database:</p>
-                                            </div>
-                                            <div class="col-6">
-                                                <span class="text-white">MySQL</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Div 2 -->
-                            <div class="col-11 col-sm-8 col-md-5 portfolioItemDiv py-4 px-4 mt-2">
-                                <div class="row h-100 ">
-                                    <!-- Image -->
-                                    <div class="col-12  d-flex align-items-center justify-content-center">
-                                        <img src="/Developer-Portfolio/assets/images/portfolioImages/FlowerCornerDesign.svg"
-                                            alt="Portfolio Image" class="portfolioItemImage" />
-                                    </div>
-                                    <!-- Details -->
-                                    <div class="col-12  mt-2 mt-lg-0 ">
-                                        <!-- Front End -->
-                                        <div class="row ">
-                                            <div class="col-6  py-0">
-                                                <p class="text-white my-0">Front-End:</p>
-                                            </div>
-                                            <div class="col-6 ">
-
-                                                <span class="text-white"> React Native </span>
-
-                                            </div>
-                                        </div>
-                                        <!-- Back End -->
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="text-white my-0">Back-End:</p>
-                                            </div>
-                                            <div class="col-6">
-                                                <span class="text-white">PHP</span><br>
-
-                                            </div>
-                                        </div>
-                                        <!-- Database -->
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="text-white my-0">Database:</p>
-                                            </div>
-                                            <div class="col-6">
-                                                <span class="text-white">MySQL</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Div 3 -->
-                            <div class="col-11 col-sm-8 col-md-5 portfolioItemDiv py-4 px-4 mt-2">
-                                <div class="row h-100 ">
-                                    <!-- Image -->
-                                    <div class="col-12  d-flex align-items-center justify-content-center">
-                                        <img src="/Developer-Portfolio/assets/images/portfolioImages/ChatAppDesign.svg"
-                                            alt="Portfolio Image" class="portfolioItemImage" />
-                                    </div>
-                                    <!-- Details -->
-                                    <div class="col-12  mt-2 mt-lg-0 ">
-                                        <!-- Front End -->
-                                        <div class="row ">
-                                            <div class="col-6  py-0">
-                                                <p class="text-white my-0">Front-End:</p>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <span class="text-white">React Native </span>
-                                            </div>
-                                        </div>
-                                        <!-- Back End -->
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="text-white my-0">Back-End:</p>
-                                            </div>
-                                            <div class="col-6">
-                                                <span class="text-white">PHP</span>
-
-                                            </div>
-                                        </div>
-                                        <!-- Database -->
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="text-white my-0">Database:</p>
-                                            </div>
-                                            <div class="col-6">
-                                                <span class="text-white">MySQL</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Div 4 -->
-                            <div class="col-11 col-sm-8 col-md-5 portfolioItemDiv py-4 px-4 mt-2">
-                                <div class="row h-100 ">
-                                    <!-- Image -->
-                                    <div class="col-12  d-flex align-items-center justify-content-center">
-                                        <img src="/Developer-Portfolio/assets/images/portfolioImages/POSDesign.svg"
-                                            alt="Portfolio Image" class="portfolioItemImage" />
-                                    </div>
-                                    <!-- Details -->
-                                    <div class="col-12  mt-2 mt-lg-0 ">
-                                        <!-- Front End -->
-                                        <div class="row ">
-                                            <div class="col-6  py-0">
-                                                <p class="text-white my-0">Front-End:</p>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <span class="text-white"> Java </span>
-                                            </div>
-                                        </div>
-                                        <!-- Back End -->
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="text-white my-0">Back-End:</p>
-                                            </div>
-                                            <div class="col-6">
-                                                <span class="text-white">Java </span>
-                                            </div>
-                                        </div>
-                                        <!-- Database -->
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="text-white my-0">Database:</p>
-                                            </div>
-                                            <div class="col-6">
-                                                <span class="text-white">MySQL</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <!-- <button class="filter-btn" data-filter="team">Team Projects</button>
+            <button class="filter-btn" data-filter="personal">Personal Projects</button> -->
         </div>
 
+        <!-- ================= TEAM PROJECTS ================= -->
+        <div class="category-section">
+            <div class="category-header">
 
-        <div>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel"
-                class="offcanvas">
-                <div class="offcanvas-header">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close" onclick="closeOffCanvas()"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="row mt-3">
-                        <div class="col-12 text-center">
-                            <a href="/Developer-Portfolio/index.html" class="text-decoration-none ">
-                                <h6 class="text-white">Home</h6>
-                            </a>
+                <h3 class="category-title">
+                    <i class="fas fa-users category-icon"></i> Team Projects
+                </h3>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- WhatsAppShop -->
+                <div class="project-card" data-category="team mobile fullstack">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fab fa-whatsapp"></i>
                         </div>
+                        <span class="project-category">Team</span>
                     </div>
-                    <div class="row mt-3">
-                        <div class="col-12 text-center">
-                            <a href="/Developer-Portfolio/app/views/portfolio.html" class="text-decoration-none ">
-                                <h6 class="text-white">Portfolio</h6>
-                            </a>
-                        </div>
+                    <h4 class="project-title">WhatsAppShop</h4>
+                    <p class="project-description">
+                        Shopping platform integrated with WhatsApp. Frontend built using React Native Expo.
+                        Backend (in progress) with Node.js, Firebase, WhatsApp API & Facebook API.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native (Expo)</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">WhatsApp API</span>
+                        <span class="tech-tag">Facebook API</span>
                     </div>
-                    <div class="row mt-3">
-                        <div class="col-12 text-center">
-                            <a href="/Developer-Portfolio/app/views/about.html" class="text-decoration-none ">
-                                <h6 class="text-white">About</h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-12 text-center">
-                            <a href="/Developer-Portfolio/app/views/contact.html" class="text-decoration-none ">
-                                <h6 class="text-white">Contact</h6>
-                            </a>
-                        </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ransharirodrigo/WhatsappShop" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
                     </div>
                 </div>
+
+                <!-- Real-time Water Level Monitoring -->
+                <div class="project-card" data-category="team iot fullstack">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <span class="project-category">Team</span>
+                    </div>
+                    <h4 class="project-title">Real-time Water Level Monitoring</h4>
+                    <p class="project-description">
+                        IoT-based system for monitoring water levels in real time using sensors with mobile access.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Java</span>
+                    </div>
+                </div>
+
             </div>
         </div>
 
+        <!-- ================= PERSONAL PROJECTS ================= -->
+        <div class="category-section">
+            <div class="category-header">
+
+                <h3 class="category-title">
+                    <i class="fas fa-user category-icon"></i> Personal Projects
+                </h3>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Marketing Package Price Calculator -->
+                <div class="project-card" data-category="personal web fullstack">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <span class="project-category">Personal</span>
+                    </div>
+                    <h4 class="project-title">Marketing Package Price Calculator</h4>
+                    <p class="project-description">
+                        Laravel-based tool that helps digital marketing agencies calculate prices for different
+                        packages.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://invoice-calculator.infinityfreeapp.com/" target="_blank"
+                            class="project-link link-demo">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/ransharirodrigo/marketing-package-price-calculator" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tech Recommendation Website -->
+                <div class="project-card" data-category="personal web ai">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="project-category">Personal</span>
+                    </div>
+                    <h4 class="project-title">Tech Recommendation Website</h4>
+                    <p class="project-description">
+                        AI-powered website that recommends laptops based on user requirements using Gemini AI Text API.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Gemini AI API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ransharirodrigo/TechRecommendationWebsite" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog App -->
+                <div class="project-card" data-category="personal web">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <span class="project-category">Personal</span>
+                    </div>
+                    <h4 class="project-title">Blog App</h4>
+                    <p class="project-description">
+                        Simple blogging application developed using Django.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ransharirodrigo/BlogApp" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lanka Store -->
+                <div class="project-card" data-category="personal desktop">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <span class="project-category">Personal</span>
+                    </div>
+                    <h4 class="project-title">Lanka Store POS System</h4>
+                    <p class="project-description">
+                        Desktop POS system developed using Java Swing.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Swing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ransharirodrigo/Lanka-Stores" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- EMart -->
+                <div class="project-card" data-category="personal web">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <span class="project-category">Personal</span>
+                    </div>
+                    <h4 class="project-title">EMart</h4>
+                    <p class="project-description">
+                        E-commerce web application developed using core web technologies and PHP.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ransharirodrigo/EMart" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Linkup Chat App -->
+                <div class="project-card" data-category="personal mobile fullstack">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <span class="project-category">Personal</span>
+                    </div>
+                    <h4 class="project-title">Linkup Chat App</h4>
+                    <p class="project-description">
+                        Real-time chat application developed using React Native for the frontend
+                        and Java for the backend.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Java</span>
+                    </div>
+                </div>
+
+                <!-- Artify E-commerce -->
+                <div class="project-card" data-category="personal web fullstack">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <span class="project-category">Personal</span>
+                    </div>
+                    <h4 class="project-title">E-commerce – Artify</h4>
+                    <p class="project-description">
+                        Web based E-commerce platform for selling artworks, developed using core web
+                        technologies with Java backend support.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Java</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Ranshari Rodrigo. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/ransharirodrigo" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tharushi-rodrigo-b79a6a271/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://web.facebook.com/profile.php?id=100078846752762" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="mailto:contact@ranshari.dev" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
-    <script src="../../assets/js/bootstrap.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const offcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvas"))
-
-
-        function openOffcanvas() {
-            offcanvas.show();
-        }
-
-        function closeOffCanvas() {
-            offcanvas.hide();
-        }
-    </script>
+    <script src="../../assets/js/script.js"></script>
 </body>
 
 </html>

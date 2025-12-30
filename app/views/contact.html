@@ -4,257 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact - Ranshari Rodrigo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 
-    <link rel="stylesheet" href="../../assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="../../assets/css/style.css" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <link rel="icon" href="../../assets/images/logo.svg" />
 </head>
 
 <body>
-    <div class="container-fluid vh-100">
-        <div class="row row px-2 h-100">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">RR</a>
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-            <!-- Offcanvas icon -->
-            <div class="col-12  navBarDiv d-md-none ">
-                <div class="row h-100 d-flex align-items-center" onclick="openOffcanvas()">
-                    <i class="bi bi-list text-white fs-5"></i>
-                </div>
-            </div>
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="section-header">
 
-            <!-- Nav Bar -->
-            <div class="col-12 navBarDiv d-none d-md-block">
-                <div class="row">
-                    <div class="col-1 d-flex justify-content-center align-items-center">
-                        <a href="/Developer-Portfolio/index.html"><img src="/Developer-Portfolio/assets/images/logo.svg"
-                                alt="logo.svg" class="logo" /></a>
-                    </div>
-                    <div class="col-11">
-                        <div class="row d-flex flex-row justify-content-end py-4 h-100">
-                            <div class="col-2 col-lg-1 text-end">
-                                <a href="/Developer-Portfolio/app/views/portfolio.html"
-                                    class="text-white text-decoration-none">Portfolio</a>
-                            </div>
-                            <div class="col-2 col-lg-1 text-end">
-                                <a href="/Developer-Portfolio/app/views/about.html"
-                                    class="text-white text-decoration-none ">About</a>
-                            </div>
-                            <div class="col-2 col-lg-1 text-end">
-                                <a href="/Developer-Portfolio/app/views/contact.html"
-                                    class="text-white text-decoration-none  ">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-12 contactPageContentDiv">
-                <div class="row h-100 d-flex  justify-content-center justify-content-md-around ">
-
-                    <!-- Get In Touch Div -->
-                    <div class="col-10 col-lg-5">
-                        <div class="row h-75">
-
-                            <!-- Heading -->
-                            <div class="text-center text-lg-start ">
-                                <h1><span class="text-white">Get In&nbsp;</span><span class="contactPageHeadingTxt">
-                                        Touch.</span></h1>
-                            </div>
-
-                            <!-- Content -->
-                            <div class="col-12 py-4 px-3 contactFormDiv mt-3 ">
-
-                                <!-- Name -->
-                                <div class="row">
-                                    <div class="col-12 col-sm-4">
-                                        <p class="text-white">Your Name ?</p>
-                                    </div>
-                                    <div class="col-12 col-sm-8">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                </div>
-
-                                <!-- Email -->
-                                <div class="row mt-4">
-                                    <div class="col-12 col-sm-4">
-                                        <p class="text-white">Your Email ?</p>
-                                    </div>
-                                    <div class="col-12 col-sm-8">
-                                        <input type="email" class="form-control" />
-                                    </div>
-                                </div>
-
-                                <!-- Message -->
-                                <div class="row mt-4">
-                                    <div class="col-12 col-sm-4">
-                                        <p class="text-white">Your Message ?</p>
-                                    </div>
-                                    <div class="col-12 col-sm-8">
-                                        <textarea rows="6" class="form-control"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="row mt-4">
-                                    <div class="col-4">
-                                        <button class="btn contactPageSubmitBtn">Submit</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Connect with Me Online Div -->
-                    <div class="col-10 col-lg-5 mt-3 mt-lg-0 ">
-                        <div class="row  h-75">
-
-                            <!-- Heading -->
-                            <div class="text-center text-lg-start">
-                                <h1><span class="text-white">Connect with Me&nbsp;</span><span
-                                        class="contactPageHeadingTxt"> Online.</span></h1>
-                            </div>
-
-
-                            <!-- Content -->
-                            <div class="col-12 ">
-
-                                <!-- Github -->
-                                <div class="row d-flex justify-content-around justify-content-lg-start">
-                                    <div class="col-3 d-none d-md-block">
-                                        <p class="text-white fs-5">Git Hub</p>
-                                    </div>
-                                    <div class="col-1">
-                                        <a href="https://github.com/ransharirodrigo"
-                                            class="text-decoration-none text-reset">
-                                            <i class="bi bi-github contactPageIcon"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- LinkedIn -->
-                                <div class="row d-flex justify-content-around justify-content-lg-start">
-                                    <div class="col-3 d-none d-md-block">
-                                        <p class="text-white fs-5">Linked In</p>
-                                    </div>
-                                    <div class="col-1">
-                                        <a href="https://www.linkedin.com/in/tharushi-rodrigo-b79a6a271/"
-                                            class="text-decoration-none text-reset">
-                                            <i class="bi bi-linkedin contactPageIcon"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- Facebook -->
-                                <div class="row d-flex justify-content-around justify-content-lg-start">
-                                    <div class="col-3 d-none d-md-block">
-                                        <p class="text-white fs-5">Facebook</p>
-                                    </div>
-                                    <div class="col-1">
-                                        <a href="https://web.facebook.com/profile.php?id=100078846752762"
-                                            class="text-decoration-none text-reset">
-                                            <i class="bi bi-facebook contactPageIcon"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- Whatsapp -->
-                                <div class="row d-flex justify-content-around justify-content-lg-start">
-                                    <div class="col-3 d-none d-md-block">
-                                        <p class="text-white fs-5">Whatsapp</p>
-                                    </div>
-                                    <div class="col-1">
-                                        <a class="text-decoration-none text-reset" onclick="openWhatsApp()">
-                                            <i class="bi bi-whatsapp contactPageIcon"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- Instagram -->
-                                <div class="row d-flex justify-content-around justify-content-lg-start">
-                                    <div class="col-3 d-none d-md-block">
-                                        <p class="text-white fs-5">Instagram</p>
-                                    </div>
-                                    <div class="col-1">
-                                        <a href="https://www.instagram.com/tharu.shi_/"
-                                            class="text-decoration-none text-reset">
-                                            <i class="bi bi-instagram contactPageIcon"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
+            <h2 class="section-title">
+                <i class="fas fa-paper-plane"></i>
+                Get In Touch
+            </h2>
         </div>
 
-        <div>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel"
-                class="offcanvas">
-                <div class="offcanvas-header">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close" onclick="closeOffCanvas()"></button>
+        <!-- Contact Form -->
+        <div class="contact-intro">
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" class="form-control" required>
                 </div>
-                <div class="offcanvas-body">
-                    <div class="row mt-3">
-                        <div class="col-12 text-center">
-                            <a href="/Developer-Portfolio/index.html" class="text-decoration-none ">
-                                <h6 class="text-white">Home</h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-12 text-center">
-                            <a href="/Developer-Portfolio/app/views/portfolio.html" class="text-decoration-none ">
-                                <h6 class="text-white">Portfolio</h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-12 text-center">
-                            <a href="/Developer-Portfolio/app/views/about.html" class="text-decoration-none ">
-                                <h6 class="text-white">About</h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-12 text-center">
-                            <a href="/Developer-Portfolio/app/views/contact.html" class="text-decoration-none ">
-                                <h6 class="text-white">Contact</h6>
-                            </a>
-                        </div>
-                    </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" required>
                 </div>
-            </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="submitBtn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
         </div>
 
-    </div>
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://github.com/ransharirodrigo" target="_blank" rel="noopener noreferrer" class="social-link">
 
+                <div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary);"> <i class="fab fa-github"></i> GitHub
+                    </div>
+                    <span>@ransharirodrigo</span>
+                </div>
+            </a>
 
-    <script src="../../assets/js/bootstrap.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/js/script.js"></script>
+            <a href="https://www.linkedin.com/in/tharushi-rodrigo-b79a6a271/" target="_blank" rel="noopener noreferrer"
+                class="social-link">
+
+                <div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary);"> <i
+                            class="fab fa-linkedin"></i> LinkedIn</div>
+                    <span>Tharushi Rodrigo</span>
+                </div>
+            </a>
+
+            <a href="mailto:contact@ranshari.dev" class="social-link">
+
+                <div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary);"> <i class="fas fa-envelope"></i> Email
+                    </div>
+                    <span>ransharirodrigo@gmail.com</span>
+                </div>
+            </a>
+
+            <a href="https://web.facebook.com/profile.php?id=100078846752762" target="_blank" rel="noopener noreferrer"
+                class="social-link">
+
+                <div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary);"> <i
+                            class="fab fa-facebook"></i> Facebook</div>
+                    <span>Tharushi Rodrigo</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Ranshari Rodrigo. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/ransharirodrigo" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tharushi-rodrigo-b79a6a271/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://web.facebook.com/profile.php?id=100078846752762" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="mailto:contact@ranshari.dev" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        const offcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvas"))
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
 
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
 
-        function openOffcanvas() {
-            offcanvas.show();
-        }
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-container')) {
+                navMenu.classList.remove('active');
+            }
+        });
 
-        function closeOffCanvas() {
-            offcanvas.hide();
-        }
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const successMessage = document.getElementById('successMessage');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && subject && message) {
+                // Disable button during submission
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+                // Simulate sending (in production, this would be an actual API call)
+                setTimeout(() => {
+                    successMessage.classList.add('show');
+                    contactForm.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        successMessage.classList.remove('show');
+                    }, 5000);
+                }, 1500);
+            }
+        });
     </script>
-</body>
-
-</html>
+    <script src="../../assets/js/script.js"></script>
