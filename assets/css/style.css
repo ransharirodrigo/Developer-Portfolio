@@ -295,6 +295,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* Ensure mobile menu is positioned relative to navbar */
 }
 
 .logo {
@@ -579,6 +580,8 @@ body {
 
 .category-section {
   margin-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .content-section {
@@ -884,11 +887,14 @@ textarea.form-control {
     top: 100%;
     left: 0;
     right: 0;
+    width: 100vw;
+    min-width: 100%;
     background: rgba(10, 14, 26, 0.98);
     flex-direction: column;
     padding: 1.5rem 2rem;
     gap: 1.5rem;
     border-top: 1px solid var(--border);
+    z-index: 1000;
   }
 
   .nav-menu.active {
