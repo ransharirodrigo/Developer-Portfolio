@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Ranshari Rodrigo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../../assets/css/style.css">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -30,7 +34,6 @@
     <!-- Content Section -->
     <section class="content-section">
         <div class="section-header">
-
             <h2 class="section-title">
                 <i class="fas fa-paper-plane"></i>
                 Get In Touch
@@ -40,73 +43,79 @@
         <!-- Contact Form -->
         <div class="contact-intro">
 
-            <form id="contactForm">
+            <form
+                id="contactForm"
+                action="mailto:ransharirodrigo@gmail.com"
+                method="POST"
+                enctype="text/plain"
+            >
+
                 <div class="form-group">
                     <label for="name">Your Name</label>
-                    <input type="text" id="name" class="form-control" required>
+                    <input type="text" id="name" name="Name" class="form-control" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" class="form-control" required>
+                    <input type="email" id="email" name="Email" class="form-control" required>
                 </div>
 
                 <div class="form-group">
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" class="form-control" required>
+                    <input type="text" id="subject" name="Subject" class="form-control" required>
                 </div>
 
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" class="form-control" rows="6" required></textarea>
+                    <textarea id="message" name="Message" class="form-control" rows="6" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary" id="submitBtn">
-                    <i class="fas fa-paper-plane"></i> Send Message
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Open Email
                 </button>
+
             </form>
         </div>
 
         <!-- Social Links -->
         <div class="social-links">
-            <a href="https://github.com/ransharirodrigo" target="_blank" rel="noopener noreferrer" class="social-link">
 
+            <a href="https://github.com/ransharirodrigo" target="_blank" class="social-link">
                 <div>
-                    <div style="font-size: 0.85rem; color: var(--text-secondary);"> <i class="fab fa-github"></i> GitHub
+                    <div style="font-size: 0.85rem; color: var(--text-secondary);">
+                        <i class="fab fa-github"></i> GitHub
                     </div>
                     <span>@ransharirodrigo</span>
                 </div>
             </a>
 
-            <a href="https://www.linkedin.com/in/tharushi-rodrigo-b79a6a271/" target="_blank" rel="noopener noreferrer"
-                class="social-link">
-
+            <a href="https://www.linkedin.com/in/tharushi-rodrigo-b79a6a271/" target="_blank" class="social-link">
                 <div>
-                    <div style="font-size: 0.85rem; color: var(--text-secondary);"> <i class="fab fa-linkedin"></i>
-                        LinkedIn</div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary);">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </div>
                     <span>Tharushi Rodrigo</span>
                 </div>
             </a>
 
-            <a href="mailto:contact@ranshari.dev" class="social-link">
-
+            <a href="mailto:ransharirodrigo@gmail.com" class="social-link">
                 <div>
-                    <div style="font-size: 0.85rem; color: var(--text-secondary);"> <i class="fas fa-envelope"></i>
-                        Email
+                    <div style="font-size: 0.85rem; color: var(--text-secondary);">
+                        <i class="fas fa-envelope"></i> Email
                     </div>
                     <span>ransharirodrigo@gmail.com</span>
                 </div>
             </a>
 
-            <a href="https://web.facebook.com/profile.php?id=100078846752762" target="_blank" rel="noopener noreferrer"
-                class="social-link">
-
+            <a href="https://web.facebook.com/profile.php?id=100078846752762" target="_blank" class="social-link">
                 <div>
-                    <div style="font-size: 0.85rem; color: var(--text-secondary);"> <i class="fab fa-facebook"></i>
-                        Facebook</div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary);">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </div>
                     <span>Tharushi Rodrigo</span>
                 </div>
             </a>
+
         </div>
     </section>
 
@@ -115,54 +124,16 @@
         <div class="footer-content">
             <p class="footer-text">© 2025 Ranshari Rodrigo. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://github.com/ransharirodrigo" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/tharushi-rodrigo-b79a6a271/" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://web.facebook.com/profile.php?id=100078846752762" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="mailto:contact@ranshari.dev" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
+                <a href="https://github.com/ransharirodrigo" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tharushi-rodrigo-b79a6a271/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://web.facebook.com/profile.php?id=100078846752762" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:ransharirodrigo@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Form submission
-        const contactForm = document.getElementById('contactForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const successMessage = document.getElementById('successMessage');
-
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-
-            if (name && email && subject && message) {
-                // Disable button during submission
-                submitBtn.disabled = true;
-                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-
-                // Simulate sending (in production, this would be an actual API call)
-                setTimeout(() => {
-                    successMessage.classList.add('show');
-                    contactForm.reset();
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-
-                    // Hide success message after 5 seconds
-                    setTimeout(() => {
-                        successMessage.classList.remove('show');
-                    }, 5000);
-                }, 1500);
-            }
-        });
-    </script>
+    <!-- Navigation JS -->
     <script src="../../assets/js/script.js"></script>
+
+</body>
+</html>
